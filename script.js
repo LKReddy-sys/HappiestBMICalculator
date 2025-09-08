@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const { category, className } = getBmiCategory(bmi);
-        const resultMessage = `Your BMI is <strong>${bmi.toFixed(2)}</strong>.<br>This is considered <strong>${category}</strong>.`;
+        const resultMessage = `Your BMI is <strong>${bmi.toFixed(1)}</strong><br>This is considered <strong>${category}</strong>`;
         
         displayResult(resultMessage, className);
     });
